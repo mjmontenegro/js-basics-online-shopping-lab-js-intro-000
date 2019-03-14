@@ -27,7 +27,7 @@ function viewCart() {
 
 function total() {
   // write your code here
-  cart.reduce((a,b) => a+b.itemPrice, 0 );
+  return cart.reduce((a,b) => a+b.itemPrice, 0 );
 }
 
 function removeFromCart(item) {
