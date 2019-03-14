@@ -20,7 +20,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   if(cart.length) {
-    return cart.reduce((a,c,i,arr) => `${a} ${c.itemName} at $${c.itemPrice}${i === arr.length -1 ? "." : ","}`, `In your cart, you have`);
+    return cart.reduce((a,c,i,arr) => `${a} ${i === arr.length -1 ? "and " : ""} ${c.itemName} at $${c.itemPrice}${i === arr.length -1 ? "." : ","}`, `In your cart, you have`);
   }
   return `Your shopping cart is empty.`
 }
